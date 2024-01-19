@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoAnDiDong"
+        tools:targetApi="31">
+        <activity
+            android:name=".employee.accountant.DetailPrescriptionUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.accountant.ListPrescriptionUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.reception.details.DetailListUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.reception.ListReceptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reception.ReceptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.reception.ReceptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.doctor_request.PrescriptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.doctor_result.DoctorDetailResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.doctor_result.DoctorListResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.technicians.SendRequireActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.technicians.DetailRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medical_appointment.EditAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.technicians.ReceiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.doctor_request.DoctorrequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.accountant.AccountantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.technicians.TechniciansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.DetailApointmentDTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor_appointment.DoctorListAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".additional_functions.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".additional_functions.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".medical_appointment.AppointmentInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medical_appointment.AddAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.LoginActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
